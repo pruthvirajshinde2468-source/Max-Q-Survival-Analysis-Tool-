@@ -7,22 +7,22 @@ class USStandardAtmosphere1976:
     """
     
     # Constants
-    G0 = 9.80665  # Sea-level gravity (m/s^2)
-    RE = 6356766.0  # Earth radius for geopotential calculation (m)
-    R_GAS = 287.0528  # Gas constant for dry air (J/(kg*K))
-    GAMMA = 1.4  # Ratio of specific heats for air
+    G0 = 9.80665  
+    RE = 6356766.0
+    R_GAS = 287.0528 
+    GAMMA = 1.4  
     
     # Layer definitions: (Geopotential Altitude h [m], Lapse Rate L [K/m], Temperature T [K], Pressure P [Pa])
     # h is the BASE of the layer.
     LAYERS = [
-        (0.0, -0.0065, 288.15, 101325.0),    # Troposphere
-        (11000.0, 0.0, 216.65, 22632.1),      # Tropopause
-        (20000.0, 0.001, 216.65, 5474.89),    # Stratosphere 1
-        (32000.0, 0.0028, 228.65, 868.019),   # Stratosphere 2
-        (47000.0, 0.0, 270.65, 110.906),      # Stratopause
-        (51000.0, -0.0028, 270.65, 66.9389),  # Mesosphere 1
-        (71000.0, -0.002, 214.65, 3.95642),   # Mesosphere 2
-        (84852.0, 0.0, 186.87, 0.3734)        # Mesopause / Thermosphere base
+        (0.0, -0.0065, 288.15, 101325.0),    
+        (11000.0, 0.0, 216.65, 22632.1),     
+        (20000.0, 0.001, 216.65, 5474.89),   
+        (32000.0, 0.0028, 228.65, 868.019),  
+        (47000.0, 0.0, 270.65, 110.906),     
+        (51000.0, -0.0028, 270.65, 66.9389), 
+        (71000.0, -0.002, 214.65, 3.95642),  
+        (84852.0, 0.0, 186.87, 0.3734)       
     ]
 
     @classmethod
