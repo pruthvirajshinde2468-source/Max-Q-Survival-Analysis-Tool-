@@ -1,5 +1,7 @@
 Max-Q Survival Analysis Tool 🚀
+
 A high-fidelity physics-based simulation and analysis tool designed to evaluate rocket structural safety and performance trade-offs during ascent. This tool focuses on Max-Q (Maximum Dynamic Pressure), providing interactive analysis of throttle strategies, structural loads, and atmospheric disturbances.
+
 🌟 Key Features
 
 US Standard Atmosphere 1976: Full atmospheric model from 0 to 150 km.
